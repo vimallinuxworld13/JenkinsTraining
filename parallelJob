@@ -1,0 +1,25 @@
+pipeline {
+    agent none
+    stages {
+           stage('Parallel Stage') {
+              parallel {
+                stage('windows script') {
+                    agent {
+                         label 'docker-slave-demo'
+                    }
+                    steps {
+                        	echo "Running in windows agent"
+                    }
+                }
+                stage('linux script') {
+                    agent {
+                         label 'docker-slave-demo'
+                    }
+                    steps {
+                       echo "Running in Linux agent"
+                    }
+                }
+             }
+        }
+    }
+}
