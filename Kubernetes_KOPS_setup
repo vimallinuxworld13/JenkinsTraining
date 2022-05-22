@@ -5,7 +5,7 @@ sudo mv kops-linux-amd64 /usr/local/bin/kops
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 chmod +x ./kubectl
-sudo mv ./kubectl /usr/local/bin/kubectl
+sudo mv ./kubectl /usr/bin/kubectl
 
 aws s3 mb s3://linuxworld.in.k8s --region ap-south-1
 
