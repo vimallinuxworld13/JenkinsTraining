@@ -11,11 +11,11 @@ aws s3 mb s3://linuxworld.in.k8s --region ap-south-1
 
 Create private hosted zone in AWS Route53
 
-export KOPS_CLUSTER_NAME=linuxworld.in
+export KOPS_CLUSTER_NAME=jenkinstraining.com
 export KOPS_STATE_STORE=s3://linuxworld.in.k8s
 
 # vim /root/.bashrc 
-export KOPS_CLUSTER_NAME=linuxworld.in
+export KOPS_CLUSTER_NAME=jenkinstraining.com
 export KOPS_STATE_STORE=s3://linuxworld.in.k8s
 
 
